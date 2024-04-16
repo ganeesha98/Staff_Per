@@ -1,0 +1,149 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Staff_Purchase_.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Login Page</title>
+
+    
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <style>
+            .navbar navbar-inverse navbar-fixed-top {
+            }
+
+            .navbar-inverse {
+                background-color: #fffbfb;
+                border-color: #fd0d0d;
+            }
+
+            .navbar-inverse .navbar-nav > li > a {
+                color: #000000;
+            }
+
+            .navbar-toggle {
+                position: relative;
+                float: right;
+                padding: 9px 10px;
+                margin-right: 15px;
+                margin-top: 8px;
+                margin-bottom: 8px;
+                background-color: #c23434;
+                background-image: none;
+                border: 1px solid transparent;
+                border-radius: 4px;
+            }
+
+            .navbar-inverse.navbar-nav > li > a:focus,
+            .navbar- inverse.navbar- nav > li > a:hover {
+                color: #090a22;
+                background-color: transparent;
+            }
+
+            .navbar-inverse .navbar-nav > li > a:focus,
+            .navbar-inverse .navbar-nav > li > a:hover {
+                color: #0a0459;
+                background-color: #d7cdcd;
+            }
+        </style>
+
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button
+                            type="button"
+                            class="navbar-toggle"
+                            data-toggle="collapse"
+                            data-target=".navbar-collapse"
+                        >
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <img
+                            src="../../cargillstransparent.png"
+                            width="105"
+                            height="53"
+                        />
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a
+                                    href="../Forms/Staff_Purchase.aspx"
+                                    >Add New Customer</a>
+                            </li>
+                            <li>
+                                <a
+                                    href="../Forms/OutletChange.aspx"
+                                    >Customer Purchase Outlet Change</a>
+                            </li>
+                            <li>
+                                <a
+                                    href="../Forms/Customer_Manage.aspx"
+                                    >Customer Managment</a>   
+                            </li>
+                            
+                            
+                            <li>
+                                <a
+                                    href="../Forms/Customer_CreditLimit.aspx"
+                                    >Customer Credit Limit</a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="../Forms/ExcelSheet_Update.aspx"
+                                    >Purchase Excel Sheet Update</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            
+            <footer style="text-align: center;">
+               
+                        &copy; <%: DateTime.Now.Year %> - Powered By Cargills IT            
+            </footer>
+        </div>
+
+    </form>
+</body>
+</html>

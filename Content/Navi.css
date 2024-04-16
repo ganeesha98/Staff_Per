@@ -1,0 +1,138 @@
+﻿body {
+}
+
+
+
+.navbar-inverse.navbar-nav > li > a:focus, .navbar- inverse.navbar- nav > li > a:hover {
+    color: #090a22;
+    background-color: transparent;
+}
+
+.navbar-inverse {
+    background-color: #ffffff;
+    border-color: #ff0005;
+}
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: #000000;
+    }
+
+
+
+
+
+.table-row1 {
+    display: table-row;
+}
+
+.table-cell1 {
+    display: table-cell;
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+.header {
+    background-color: #0000;
+}
+
+.alignSuccessMessage {
+    margin-left: 90px;
+}
+
+.input-field1 {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+
+
+
+.table-container {
+    display: table;
+    width: 100%;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.table-cell {
+    display: table-cell;
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+.header {
+    font-family: ui-monospace;
+    background-color: #000000;
+}
+
+.input-field {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background-color: #FFFFFF;
+    color: black;
+}
+
+.button-with-margin {
+    margin-left: 210px;
+}
+
+
+.bordered {
+    width: 800px;
+    height: auto;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.row {
+    width: auto;
+    height: auto;
+}
+
+
+
+.navbar-inverse {
+    background-color: #fffbfb;
+    border-color: #fd0d0d;
+}
+
+.navbar-inverse.navbar-nav > li > a:focus, .navbar- inverse.navbar- nav > li > a:hover {
+    color: #090a22;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #000000;
+}
+
+    .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+        color: #0a0459;
+        background-color: #d7cdcd;
+    }
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #101010;
+}
+
+
+.form-group row {
+}
+
+.form-group {
+    margin-bottom: 5px;
+}
+
+col-sm-2 col-form-label {
+}
+
+
+
+footer {
+    text-align: center;
+}
